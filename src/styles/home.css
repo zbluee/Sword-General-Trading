@@ -1,0 +1,53 @@
+/* src/styles/home.css */
+
+.container {
+    max-width: 800px;
+    margin: auto; /* Center the container horizontally */
+    padding: 20px;
+    text-align: center;
+    z-index: 1; /* Ensure the text is above the overlay */
+}
+  
+.message {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold; /* Make the message bold */
+    color: red; 
+}
+
+  
+.background {
+    background-image: url('https://source.unsplash.com/1600x900/?trading');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Make the background full screen */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    position: relative; /* Ensure overlay is positioned relative to the background */
+}
+  
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.background h2 {
+    color: #fff; /* Set text color to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+    margin-bottom: 10px; /* Reduce space between the trading name and the "under construction" message */
+    font-size: 36px; /* Increase font size for the trading name */
+}
+  
+.background p {
+    color: #fff; /* Set text color to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+    font-size: 24px; /* Increase font size for the subheading text */
+}
